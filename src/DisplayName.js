@@ -1,11 +1,12 @@
-export function DisplayName(props){
-    return <h1>My name is Pratim</h1>
-};
+import React from 'react'
 
-export  const DisplayAge= (props) =>{
-    return <h1>My age is 21</h1>
-};
+function DisplayName({name,age,children}) {
+    return (
+        <div>
+            <h1>Hi {name} {age}</h1>
+             <h1>{children}</h1>
+        </div>
+    )
+}
 
-export function CityName(props) {
-    return <h1>I am from Mumbai</h1>  
-};
+export default DisplayName
