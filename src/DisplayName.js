@@ -1,10 +1,10 @@
 import React from 'react'
 
-function DisplayName({name,age,children}) {
+function DisplayName({name, alertName}) {
     return (
         <div>
-            <h1>Hi {name} {age}</h1>
-             <h1>{children}</h1>
+            <h1>Hi {name}</h1>
+            <button onClick={()=>alertName("Kabir")}>Click Me</button>
         </div>
     )
 }
